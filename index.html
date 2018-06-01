@@ -1,1 +1,98 @@
-<h1>熊刚的个人博客</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>个人博客</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<!--头部标题-->
+	<header class="wjs_header">
+		<div class="container">
+			<div class="row">
+				<div class="title col-md-6">
+					<span>熊刚个人博客</span>
+				</div>
+				<div class="aphorism col-md-6 hidden-sm hidden-xs">
+					<span>一路旖旎 我的“IT江湖梦”</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--头部标题结束-->
+	<!--导航条-->
+	<div id="app">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<router-link to="/">首页</router-link>
+						</li>
+						<li>
+							<router-link to="/project">项目</router-link>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">GitHub</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
+		<!--导航条结束-->
+		<!--中间内容层-->
+		<router-view></router-view>
+		<!--中间内容层结束-->
+	</div>
+
+	<!--组件区域-->
+	<!--主页组件区域-->
+	<template id="homepage">
+		<div>
+			<h1>主页组件</h1>
+		</div>
+	</template>
+	<!--主页组件区域结束-->
+	<!--项目组件区域-->
+	<template id="project">
+		<div>
+			<h3>移动web</h3>
+			<h5><a href="https://gangking.github.io/MeiZu-Mobile/index.html">魅族商城官网，移动版</a></h5>
+			<h5><a href="https://gangking.github.io/WJS-Project/index.html">微金所官网，响应式</a></h5>
+			<h5><a href="https://gangking.github.io/Baidu-Mobile-Project/index.html">手机百度移动版</a></h5>
+			<h3>网页布局以及动画</h3>
+			<h5>
+				<a href="">支付宝官方首页，没用任何插件</a>
+			</h5>
+			<h5></h5>
+			<h5></h5>
+		</div>
+	</template>
+	<!--项目组件区域结束-->
+	<!--组件区域结束-->
+	<!--底部-->
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/vue/vue-2.4.0.js"></script>
+	<script src="lib/vue/vue-router-3.0.1.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

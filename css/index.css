@@ -1,0 +1,24 @@
+header {
+    width:100%;
+    height: 100px;
+    background: #72d0eb;
+}
+header .container .row div{
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+}
+/*header .container .row .title{
+
+}*/
+header .container .row .title span{
+    /*line-height: 100px;*/
+    text-align: center;
+    font-size: 56px;
+}
+header .container .row .aphorism span{
+    /*line-height: 100px;*/
+    text-align: left;
+    font-size: 30px;
+}
